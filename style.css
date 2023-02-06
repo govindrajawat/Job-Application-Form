@@ -22,7 +22,7 @@ body {
     /* margin-top: 50px; */
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    box-shadow: 4px 10px 20px rgba(55, 52, 73, 0.4);
 }
 .form_container{
     margin-top: 30px;
@@ -64,13 +64,60 @@ input, select, textarea {
     /* font-weight: 500; */
     /* color: red; */
 }
-
+#background {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background: #222831;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    transition: all 0.7s ease;
+}
+.bts {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .bts:hover {
+    transform: scale(1.6);
+    transition: all 0.4s ease;
+  }
+  
+  .rosegold {
+    background: #57D1C9;
+    bottom: 30px;
+  }
+  
+  .coral {
+    background: #FF7A6C;
+    bottom: 60px;
+  }
+  
+  .fuschia {
+    background: #A24868;
+    bottom: 90px;
+  }
+  
+  .black {
+    background: #373449;
+    bottom: 120px;
+  }
 /* input:focus {
     outline-color: red; not working
 } */
 textarea:focus, input:focus, select:focus  {   
     border-color: rgba(241, 16, 16, 0.986);
     outline: 0 none;
+    transition: 0.5s ease-out;
 }
 .apply_btn {
     display: flex;
@@ -85,7 +132,7 @@ button {
     color: #fff;
     cursor: pointer;
     font-size: 15px;
-    transition: 0.3s ease-in;
+    /* font-weight: 500; */
 }
 button:hover {
     background-color: #ccc;

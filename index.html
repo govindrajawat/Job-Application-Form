@@ -9,8 +9,9 @@
 </head> 
 <body>  
     <div class="container">
+        <div id="background"></div>
         <div class="apply_box">
-            <h1>Job Application Form (web)</h1>
+            <h1 id="title">Job Application Form (web)</h1>
             <form action="">
                 <div class="form_container">
                     <div class="form_items item1">
@@ -63,7 +64,13 @@
                 </div>
             </form>
         </div>
-        
+        <div>
+            <div class="bts rosegold" id="rosegold" onclick="rosegoldColor()"></div>
+            <div class="bts coral" id="coral" onclick="coralColor()"></div>
+            <div class="bts fuschia" id="fuschia" onclick="fuschiaColor()"></div>
+            <div class="bts black" id="black" onclick="blackColor()"></div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
